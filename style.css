@@ -1,0 +1,150 @@
+/* Stylesheet Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif
+}
+
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    background: hsl(230, 100%, 99%);
+}
+
+
+/* container styling */
+
+.container {
+    width: 90%;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+
+/* Header Section */
+
+.head {
+    width: 100%;
+    min-height: 40vh;
+    margin-bottom: 3.5rem;
+}
+
+.first {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: url('/images/pattern-circles.svg') no-repeat center;
+    background-size: 12rem;
+}
+
+.first h2 {
+    margin-bottom: 1rem;
+}
+
+.first p {
+    color: hsl(225, 20%, 60%);
+}
+
+
+/* Main Section */
+
+.main {
+    width: 100%;
+    min-height: 40vh;
+    display: flex;
+    justify-content: center;
+}
+
+.second {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.second h4 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: hsl(225, 20%, 60%);
+    margin-bottom: 2.5rem;
+}
+
+
+/* styling slider */
+
+.slider {
+    width: 240px;
+    margin: 0 auto;
+    margin-bottom: 2.5rem;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 10px;
+    background: hsl(174, 86%, 45%);
+    border: none;
+    border-radius: 15px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: url('/images/icon-slider.svg') center no-repeat, hsl(174, 86%, 45%);
+    margin-top: -20px;
+    background-size: 30px;
+    cursor: pointer;
+}
+
+
+/*biling*/
+
+.biling-method {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    min-height: 20vh;
+    width: 100%;
+}
+
+.background {
+    width: 45px;
+    border-radius: 40px;
+    background-color: hsl(223, 50%, 87%);
+    position: relative;
+    height: 20px;
+    margin: 0.5rem;
+}
+
+input[type=checkbox] {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 30px;
+    position: absolute;
+    margin-top: 2px;
+    left: 4px;
+    cursor: pointer;
+}
+
+input[type=checkbox]:focus {
+    outline: 0;
+}
