@@ -133,6 +133,9 @@ input[type=range]::-webkit-slider-thumb {
     margin: 0.5rem;
 }
 
+
+/*styling checkbox */
+
 input[type=checkbox] {
     -webkit-appearance: none;
     width: 15px;
@@ -147,4 +150,53 @@ input[type=checkbox] {
 
 input[type=checkbox]:focus {
     outline: 0;
+}
+
+
+/*advantages*/
+
+.advantages {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    min-height: 20vh;
+    justify-content: space-evenly;
+}
+
+.adv-1,
+.adv-2,
+.adv-3 {
+    text-align: center;
+}
+
+.adv-1 span {
+    margin-left: .1rem;
+}
+
+.adv-2 span {
+    margin-left: .1rem;
+}
+
+.adv-3 span {
+    margin-left: .1rem;
+}
+
+
+/* End Button */
+
+.Start-btn {
+    width: 100%;
+    text-align: center;
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Start-btn a {
+    text-decoration: none;
+    padding: 0.8rem 3rem;
+    background-color: hsl(227, 35%, 25%);
+    border-radius: 30px;
+    color: white;
 }
