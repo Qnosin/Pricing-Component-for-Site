@@ -112,6 +112,10 @@ input[type=range]::-webkit-slider-thumb {
     cursor: pointer;
 }
 
+input[type=range]:focus {
+    outline: none;
+}
+
 
 /*biling*/
 
@@ -146,6 +150,7 @@ input[type=checkbox] {
     margin-top: 2px;
     left: 4px;
     cursor: pointer;
+    transition: 0.5s;
 }
 
 input[type=checkbox]:focus {
@@ -199,4 +204,79 @@ input[type=checkbox]:focus {
     background-color: hsl(227, 35%, 25%);
     border-radius: 30px;
     color: white;
+}
+
+
+/*switch button */
+
+.move {
+    transition: 0.5s;
+    transform: translateX(20px);
+}
+
+.changeBack {
+    background-color: hsl(174, 77%, 80%);
+}
+
+
+/*discount*/
+
+#discount {
+    font-size: .7rem;
+    padding: .2rem .5rem;
+    color: hsl(15, 100%, 70%);
+    background-color: hsl(14, 92%, 95%);
+    border-radius: 40px;
+    margin-left: .4rem;
+}
+
+
+/*media*/
+
+@media screen and (min-width:1440px) {
+    .footer {
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+    }
+    .Start-btn {
+        width: 20%;
+    }
+    .advantages {
+        width: 20%;
+    }
+    .first br {
+        display: none;
+    }
+    .second {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        min-height: 10vh;
+        align-items: center;
+    }
+    .slider {
+        margin: 0;
+        margin-top: 10rem;
+        width: 500px;
+    }
+    .biling-method {
+        height: 10%;
+        justify-content: center;
+    }
+    .biling-method p {
+        margin-left: 0.5rem;
+    }
+    .background {
+        margin: 0rem 1rem;
+    }
+    .second h4 {
+        margin: 0;
+    }
+    .first {
+        height: 50vh;
+    }
+    .head {
+        margin: 0;
+    }
 }
