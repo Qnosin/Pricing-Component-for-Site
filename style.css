@@ -43,7 +43,7 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    background: url('/images/pattern-circles.svg') no-repeat center;
+    background: url('images/pattern-circles.svg') no-repeat center;
     background-size: 12rem;
 }
 
@@ -106,7 +106,7 @@ input[type=range]::-webkit-slider-thumb {
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    background: url('/images/icon-slider.svg') center no-repeat, hsl(174, 86%, 45%);
+    background: url('images/icon-slider.svg') center no-repeat, hsl(174, 86%, 45%);
     margin-top: -20px;
     background-size: 30px;
     cursor: pointer;
